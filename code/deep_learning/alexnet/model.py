@@ -10,7 +10,7 @@ class AlexNet(nn.Module):
         super(AlexNet, self).__init__()
         self.features = nn.Sequential(
 
-        #Reset parameters (kernel size and stride values) for the first con2d and first MaxPool2d
+        #Reset parameters (kernel size and stride values) for the first Con2d and first MaxPool2d
         #So that it corresponds to the initial input size of the image (i.e., 32)
         #output_size = (input_size-kernel_size+2*padding)/stride+1
 
