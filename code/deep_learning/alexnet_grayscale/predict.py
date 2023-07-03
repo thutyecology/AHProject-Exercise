@@ -109,6 +109,7 @@ def main():
         print('Row ' + str(i) + ' finished!')
 
     # Save predictions
+    #outname = "predict.tif"
     outname = "predict_img1.tif"
     outfile = os.path.join(image_path, outname)
     cv2.imwrite(outfile, outimg)
