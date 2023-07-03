@@ -14,7 +14,7 @@ class AlexNet(nn.Module):
         #So that it corresponds to the initial input size of the image (i.e., 32)
         #output_size = (input_size-kernel_size+2*padding)/stride+1
 
-            nn.Conv2d(3, 48, kernel_size=8, stride=1, padding=2),    # input[1, 32, 32]  output[48, 29, 29]
+            nn.Conv2d(3, 48, kernel_size=8, stride=1, padding=2),    # input[3, 32, 32]  output[48, 29, 29]
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=3, stride=1, padding=0),        # input[48, 29, 29]  output[48, 27, 27]
 
