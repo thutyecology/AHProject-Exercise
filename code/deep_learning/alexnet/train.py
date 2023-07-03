@@ -19,12 +19,10 @@ def main():
     #Transform training and validation data
     data_transform = {
         "train": transforms.Compose([transforms.RandomResizedCrop(input_size),
-                                     #transforms.RandomResizedCrop(224),
                                      transforms.RandomHorizontalFlip(),
                                      transforms.ToTensor(),
                                      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]),
         "val": transforms.Compose([transforms.Resize((input_size, input_size)),
-                                   #transforms.Resize((224, 224)),  # cannot 224, must (224, 224)
                                    transforms.ToTensor(),
                                    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])}
 
