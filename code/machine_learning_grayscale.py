@@ -124,8 +124,7 @@ img2texr = computeTextures(img2gray)
 #plotTextures(img1texr,'texture_1939_grayscale.jpeg')
 plotTextures(img2texr,'texture_2019_grayscale.jpeg')
 
-useTextures = False
-useTextures = True
+useTextures = True #False
 
 if useTextures:
     feature_name = ['Value','ASM','Contrast','Dissimilarity','Entropy','Energy','Homogeneity','Variance']
