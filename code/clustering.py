@@ -48,6 +48,7 @@ for k in range(2,13):
     
     fig,ax = plt.subplots(1,1,dpi=300)
     plt.imshow(cluster2,cmap='Set1')
-    plt.title('Image-2019, Clusters='+str(k))
+    plt.title('Image-2019, $\it{k}$='+str(k))
     #plt.savefig(outdir+'Image-2019-Clusters'+str(k)+'.jpeg', bbox_inches = 'tight')
     plt.show()
+
