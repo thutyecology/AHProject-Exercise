@@ -105,7 +105,7 @@ def plotTextures(img,outname):
     
     plt.subplots_adjust(wspace=0.05, hspace=0.05)
     outdir = parent+'/result/machine_learning/'
-    plt.savefig(outdir+outname, bbox_inches='tight')
+    #plt.savefig(outdir+outname, bbox_inches='tight')
     plt.show()
     
 #Get data root
