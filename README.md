@@ -1,6 +1,6 @@
 # AHProject-Exercise
 
-Codes used for detecting land cover changes in the SF Bay Area from 1939 to 2019
+Code used for detecting land cover changes in the SF Bay Area from 1939 to 2019
 
 Data sources: "Fig1_1939.jpeg", "Fig2_2019.jpeg", "sample_2019_location.shp"
 
