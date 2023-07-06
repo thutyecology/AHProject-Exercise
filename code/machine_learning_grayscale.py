@@ -28,12 +28,12 @@ warnings.filterwarnings('ignore')
 
 #Function to compute textures
 def computeTextures(img):
-    asm, ene = fast_glcm.fast_glcm_ASM(img,ks=5)
-    cont = fast_glcm.fast_glcm_contrast(img,ks=5)
-    diss = fast_glcm.fast_glcm_dissimilarity(img,ks=5)
-    homo = fast_glcm.fast_glcm_homogeneity(img,ks=5)
-    ent = fast_glcm.fast_glcm_entropy(img,ks=5)
-    std = fast_glcm.fast_glcm_std(img,ks=5)  
+    asm, ene = fast_glcm.fast_glcm_ASM(img,ks=3)
+    cont = fast_glcm.fast_glcm_contrast(img,ks=3)
+    diss = fast_glcm.fast_glcm_dissimilarity(img,ks=3)
+    homo = fast_glcm.fast_glcm_homogeneity(img,ks=3)
+    ent = fast_glcm.fast_glcm_entropy(img,ks=3)
+    std = fast_glcm.fast_glcm_std(img,ks=3)  
     
     textures = np.concatenate((np.expand_dims(img,axis=-1),
                                np.expand_dims(asm,axis=-1),
