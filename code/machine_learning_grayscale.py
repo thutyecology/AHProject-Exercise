@@ -124,6 +124,7 @@ img2texr = computeTextures(img2gray)
 #plotTextures(img1texr,'texture_1939_grayscale.jpeg')
 plotTextures(img2texr,'texture_2019_grayscale.jpeg')
 
+#Whether to use texture features
 useTextures = True #False
 
 if useTextures:
