@@ -41,7 +41,7 @@ for k in range(2,13):
     #Plot results
     fig,ax = plt.subplots(1,1,dpi=300)
     plt.imshow(cluster1,cmap='Set1')
-    plt.title('Image-1939, Clusters='+str(k))
+    plt.title('Image-1939, $\it{k}$='+str(k))
     outdir = parent+'/result/kmeans_clustering/'
     #plt.savefig(outdir+'Image-1939-Clusters'+str(k)+'.jpeg', bbox_inches = 'tight')
     plt.show()
